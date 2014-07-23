@@ -1,0 +1,2063 @@
+/* CSS Document */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+@import url("http://fonts.googleapis.com/css?family=Oogie+Boogie&subset=latin,latin-ext");
+@import url("http://fonts.googleapis.com/css?family=BD+Cartoon+Shout&subset=latin,latin-ext");
+@import url("http://fonts.googleapis.com/css?family=MV+Boli&subset=latin,latin-ext");
+
+@font-face {
+    font-family: 'OogieBoogieRegular';
+    src: url('../fonts/OogieBoogie-webfont.eot');
+    src: url('../fonts/OogieBoogie-webfont.eot?#iefix')
+    format('embedded-opentype'),
+    url('../fonts/OogieBoogie-webfont.woff') format('woff'),
+    url('../fonts/OogieBoogie-webfont.ttf') format('truetype'),
+    url('../fonts/OogieBoogie-webfont.svg#OogieBoogieRegular')
+    format('svg');
+}
+
+@font-face {
+    font-family: 'BDCartoonShoutRegular';
+    src: url('../fonts/BDCartoonShout-webfont.eot');
+    src: url('../fonts/BDCartoonShout-webfont.eot?#iefix')
+    format('embedded-opentype'),
+    url('../fonts/BDCartoonShout-webfont.woff') format('woff'),
+    url('../fonts/BDCartoonShout-webfont.ttf') format('truetype'),
+    url('../fonts/BDCartoonShout-webfont.svg#BDCartoonShoutRegular')
+    format('svg');
+}
+
+@font-face {
+    font-family: 'MVBoliRegular';
+    src: url('../fonts/MVBoli-webfont.eot');
+    src: url('../fonts/MVBoli-webfont.eot?#iefix')
+    format('embedded-opentype'),
+    url('../fonts/MVBoli-webfont.woff') format('woff'),
+    url('../fonts/MVBoli-webfont.ttf') format('truetype'),
+    url('../fonts/MVBoli-webfont.svg#MVBoliRegular')
+    format('svg');
+}
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+body {
+    margin: 0;
+}
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,a:hover {   outline: 0;}
+img,image{ border:none; margin: 0 auto; }
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+legend {
+    border: 0; /* 1 */
+    padding: 0; /* 2 */
+}
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+button,input,select,textarea {    font-family: inherit; /* 1 */    font-size: 100%; /* 2 */    margin: 0; /* 3 */}
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+button,input {    line-height: normal;}
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+button,select {    text-transform: none;}
+
+button,html input[type="button"], /* 1 */input[type="reset"],input[type="submit"] {    -webkit-appearance: button; /* 2 */    cursor: pointer; /* 3 */}
+
+input[type="checkbox"],input[type="radio"] {    box-sizing: border-box; /* 1 */    padding: 0; /* 2 */}
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {   -webkit-appearance: textfield; /* 1 */  -moz-box-sizing: content-box;   -webkit-box-sizing: content-box; /* 2 */   box-sizing: content-box;}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration {    -webkit-appearance: none;}
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+}
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+table {  border-collapse: collapse;  border-spacing: 0;}
+.clear {    clear: both;}
+.left {    float: left;}
+.center{   text-align:center;}
+.right {    float: right;}
+a {    text-decoration: none;    color: #000000;}
+body {   background-image: url('../img/fundo.png');   background-attachment: fixed;   }
+body, p{  margin: 0.8em 0;  font-family:Verdana, Geneva, Helvetica ; color:#000; font-size:12px; line-height: 17px; padding-left:15px; }
+.wrapper{
+    border:2px threedface solid;
+    border-radius:25px;
+    background-image: url(../img/Sombra.png);
+    box-shadow: 10px 10px 10px #888888;
+    width:1100px;
+    position:relative;
+    margin:0 auto;
+    top:50px;
+    min-height:100%;
+}
+.wrapper img, image{
+    border: none;
+    position:relative;
+    margin:0 auto;
+}
+/* RED TOP MENU ---- */
+.menu {
+    background-image:url(../img/menu.png);
+    background-repeat: no-repeat;
+    width:970px;
+    height:60px;
+    margin: 0 auto;
+    padding-top: 2px;
+}
+
+.menu ul {
+    padding: 0;
+    list-style: none;
+}
+
+.menu ul li {
+    display: block;
+    float: left;
+    width: 320px;
+    text-align: center;    
+}
+
+.menu ul li a {
+    color:#fff;
+    font-family:MV Boli, Geneva;
+    font-size:14px;
+    font-weight: bold;
+    text-decoration:none;
+    margin-left: 36px;
+}
+
+.menu ul li a:hover {
+    color: #E6B800;
+}
+/* FIM RED TOP MENU --------- */
+#logotipo {
+    position: absolute;
+    top: -40px;
+    left: -12px;
+}
+.bt_regista_loginadmin {
+    background-color: Transparent;
+    position: relative;
+    top: 11px;
+    display: inline-block;
+    border-radius: 3px;
+    left: 12px;
+}
+.bt_rede_social {
+    background-color: Transparent;
+    position: relative;
+    top: 9px;
+    height: 1px;
+    display: inline-block;
+    border-radius: 3px;
+    left: 182px;
+}
+.btn_rede_social {
+    background-color: Transparent;
+    position: relative;
+    top: -35px;
+    display: inline-block;
+    border-radius: 3px;
+    padding: 1px 8px 1px 8px;
+}
+.btn_rede_socialgmail {
+    background-color: Transparent;
+    position: relative;
+    top: -35px;
+    display: inline-block;
+    border-radius: 3px;
+    left:-32px;
+    padding: 1px 8px 1px 8px;
+}
+.btn_rede_socialgmail a {
+    text-decoration: none;
+    color:#fff;
+    font-family:MV Boli, Geneva;
+    font-size:10px;
+}
+
+.btn_rede_socialgmail:hover {
+    background-color: Transparent;
+}
+.btn_rede_social a {
+    text-decoration: none;
+}
+
+.btn_rede_social:hover {
+    background-color: Transparent;
+}
+
+.btn_regista_login {
+    background:#E6B800;
+    position: relative;
+    top: -41px;
+    display: inline-block;
+    border-radius: 3px;
+    padding: 1px 8px 1px 8px;
+    font-weight:bold;
+    text-shadow: 1px 1px 1px rgba(255,255,255,0.5);
+}
+
+.btn_regista_login a {
+    text-decoration: none;
+}
+
+.btn_regista_login:hover {
+    background-color: #D5EFF7;
+}
+
+/* INICIO MENU IMG */
+.menu_img {
+ position: relative;
+ top: -20px;
+ float: left;
+ border:  none;
+}
+.menu_img ul li {
+    list-style: none;
+    display: block;
+    float: left;
+}
+
+.menu_img ul li:hover {
+    transform: rotate(5deg);
+    -ms-transform:rotate(5deg); /* IE 9 */
+    -webkit-transform:rotate(5deg); /* Safari e Chrome */
+}
+/* FIM MENU_IMG */
+
+
+.conteudo_geral {
+    padding: 25px 20px 5px 60px;
+}
+.barra_laterall {
+    height: 350px;
+    width: 220px;
+    margin-left: 25px;
+    text-align: center;
+}
+
+.barra_laterall .links_destaque {
+    background: #FFFFFF;
+    border: 1px solid #E8E8E8;
+    border-radius:20px;
+    margin: 0 auto;
+    width: 200px;
+}
+
+.barra_laterall .links_destaque div {
+    background: #E6B800;     
+    text-align: left;
+    width:180px;
+    margin: 0 auto;
+    border:5px #fff solid;
+    border-radius:20px;
+}
+.barra_lateral {
+    height: 350px;
+    width: 260px;
+    margin-left: 25px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.barra_lateral .links_destaque {
+    background: #FFFFFF;
+    border: 1px solid #E8E8E8;
+    border-radius:25px;
+    margin: 0 auto;
+    width: 200px;
+}
+
+.barra_lateral .links_destaque div {
+    background: #E6B800;     
+    text-align: left;
+    width:170px;
+    margin: 0 auto;
+    border:5px #fff solid;
+    border-radius:25px;
+    padding: 10px;
+}
+
+.barra_lateral .links_destaque p {
+    border-bottom: 1px solid #222;
+    margin-left: 30px;
+    font-family:MV Boli, Geneva;
+    padding-left: 15px;
+    font-size:16px;
+    line-height: 18px;
+    font-weight: bold;
+}
+.barra_laterall .links_destaque p {
+    border-bottom: 1px solid #222;
+    margin-left: 30px;
+    font-family:MV Boli, Geneva;
+    padding-left: 15px;
+    font-size:16px;
+    line-height: 18px;
+    font-weight: bold;
+}
+
+
+.banner_pub {
+    height: 400px;
+    background: transparent; 
+}
+
+
+/* INICIO RODAPE ----------------- */
+.footer {
+    margin: 0 auto;
+    height: 100px;
+}
+
+.footer p {
+    font-size:9px;
+    text-align: center;
+    line-height: 12px;
+}
+
+.footer p a {
+    text-decoration: none;
+}
+/*-------- fim rodapé ---------- */
+
+
+/*----------------------------
+	pagina personagem
+-----------------------------*/
+.admin_content {
+    width: 700px;
+    text-align: left;
+    top: -75px;
+    background-image:url(../img/noise.png);
+    border-radius:25px;
+    border:2px #E8E8E8 solid;
+}
+
+
+.wrapperindex{ 
+    border:2px #E8E8E8 solid;
+    border-radius:25px;
+    box-shadow: 15px 10px 10px  #888888;
+    width:995px;
+    background-image: url(../img/Sombra.png);
+    height: 660px;
+    position:relative;
+    margin:0 auto;
+    top:40px;
+}
+.index_footer
+{
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    width: 800px;
+    top: 140px;
+    margin: 0 auto;
+    height: 220px;
+    background-color: transparent;
+    clear:both;
+}
+.index_footer p
+{
+    color:#333;
+    font-size:9px;;
+    font-variant:inherit;
+    font-family:Verdana, Geneva, Helvetica ;
+    text-align: center;
+    line-height: 12px;
+    margin: 0 auto;
+}
+.cont_geral{
+    background-color: Transparent;
+    top:70px;
+    margin:0 auto;
+    width:960px;
+    padding:5px;
+    padding-bottom:5px;   /* Mesma Altura do Rodapé */
+    position:relative;
+    margin-bottom: 30px;
+}
+.conteudo{
+    border:3px #E8E8E8 solid;
+    border-radius:5px;
+    width:748px;
+    height:350px;
+    position:relative;
+    float:left;
+    top: -85px;
+    left:4px;
+    margin:0 auto;
+    background-image:url(../img/conteudo.gif);
+    margin-bottom: 10px;
+}
+
+/* fim pagina fofoca*/
+.conteudo_fofoca{
+    width:551px;
+    position:relative;
+    float:left;
+    margin:0 auto;
+    padding: 5px;
+    padding-top: 180px;
+    padding-bottom: 100px;
+    background-image:url(../img/fofocas.png);
+    margin-bottom: 20px;
+}
+.destaque_fofoca{
+    border-radius:20px;
+    width:220px;
+    top:75px;
+    float:right;
+    left:-255px;
+    position:relative;
+    font-family:MV Boli, Geneva;
+    background-image:url(../img/fofo.png);
+}
+
+.destaquef{
+    width:220px;
+    position:relative;
+    float:right;
+    left:155px;
+    text-align:center;
+    font-family:MV Boli, Geneva;
+    background-color: Transparent;
+    margin-bottom: 10px;
+}
+
+
+.destaque_fofoca p {
+    font-size: 14px;
+    font-weight: bold;
+    text-align:left;
+    margin-left: 28px;
+    padding-left: 22px;
+    color: #222;
+    text-decoration:underline;
+    font-family:MV Boli, Geneva;
+}
+.conteudo_fofoca img {
+    float: left;
+    margin: 10px10px 0 0;
+    padding: 2px;
+}
+
+/* fim pagina fofoca*/
+
+.conte{
+  border:1px #E8E8E8 solid;
+    border-radius:25px;
+    width:740px;
+    position:relative;
+    float:left;
+    top: -85px;
+    padding: 5px;
+    background-color: Transparent;
+    margin-bottom: 20px;
+}
+.conteudo img {
+border: 1pxsolid #7E9F19;
+float: left;
+margin: 10px10px 0 0;
+padding: 2px;
+}
+.conteudo h2{
+    border-bottom: 1px background ;
+    margin: 0;
+}
+.conteudo a{
+    color: #333;
+    text-decoration:none;
+    font-size:12px;
+}
+.conteudo a:hover{
+    color: #000;
+    text-decoration:underline;
+    font-size:12px;
+}
+.conteudo img{
+    float: left;
+    margin: 2px 2px 0 0;
+    padding: 2px;
+}
+.destaque{
+    width:200px;
+    position:relative;
+    float:right;
+    top: -82px;
+    font-family:MV Boli, Geneva;
+    background-color: Transparent;
+    margin-bottom: 20px;
+}
+.destaque_img{
+    border:2px #fff solid;
+    border-radius:25px;
+    width:190px;
+    top: -3px;
+    height:200px;
+    position:relative;
+    background:url(../img/destaque.png);
+}
+.destaque h3{
+    font-size: 16px;
+    border: 1px solid #CCC;
+}
+
+
+.loguinho
+{
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    width: 420px;
+    margin: 0 auto;
+    height: 27px;
+}
+#main{
+    padding-top: 50px;
+    width:720px;
+    border-radius:25px;
+    position:relative;
+    margin-bottom: 20px;
+    float:left;
+    background:url('../img/historia.png');
+}
+.admin_perso {
+    border:8px #E6B800 solid;
+    border-radius:20px; 
+    width: 740px;
+    text-align: left;
+    top: -55px;
+    background-image:url(../img/persona.png);
+}
+.admin_perso h1{
+    line-height: 25px;
+    text-align: center;
+    text-shadow: 0px 2px 0px #fff;
+    font-size:32px;
+    font-weight: bold;
+    color: #222;
+    margin-top: 25px;
+    font-family:OogieBoogie, BD Cartoon Shout, Verdana;
+}
+.admin_persona{
+    width:420px;
+    position:relative;
+    float:right;
+    background: transparent;
+    left:-6px;
+    padding-top: 14px;
+    height:370px;
+    overflow:auto;
+    border-radius:10px;
+}
+.admin_persona h4{
+    line-height: 25px;
+     text-align: center;
+    text-shadow: 0px 2px 0px #fff;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    font-family:MV Boli, Geneva;
+    padding-left: 46px;
+    padding-right: 4px;
+    padding-bottom:1.5px;
+}
+
+#main-p{
+    padding-top: 5px;
+    position:relative;
+    margin-bottom: 20px;
+    float:left;
+    padding-bottom: 335px;
+    border:8px #E6B800 solid;
+    border-radius:20px; 
+    width: 720px;
+    text-align: left;
+    background-image:url(../img/persona.png);
+}
+#main-p h2{
+    line-height: 25px;
+    text-shadow: 2px 2px 1px #000;
+    font-size: 21px;
+    color: #FFF;
+    font-family:BD Cartoon Shout ,SHOWCARD GOTHIC,MV Boli, Geneva;
+    text-align:center;
+    padding-left: 46px;
+    padding-right: 4px;
+    top:-3px;
+    padding-bottom:1.5px;
+}
+#carousel{
+    text-align:center;
+    height:60px;
+    padding: 10px;
+    opacity:3;
+    /* Will animate the transition */
+    -moz-transition:0.3s opacity;
+    -webkit-transition:0.3s opacity;
+    transition:0.3s opacity;
+}
+
+#carousel.active{
+	opacity:4;
+}
+#carousel h1{
+    text-shadow: 0px 2px 0px #fff;
+    font-size:30px;
+    font-family:OogieBoogie,SHOWCARD GOTHIC, BD Cartoon Shout, Verdana;
+    line-height: 25px;
+    color: #000;
+    margin-left: 5px;
+    width:240px;
+    text-align:center;
+    padding-bottom:1.5px;
+}
+#carousel li{
+    display:none;
+    list-style:none;
+    width:180px;
+    height:200px;
+    padding: 10px;
+    margin: 25px ;
+    position:relative;
+    -moz-transition:0.4s opacity;
+    -webkit-transition:0.4s opacity;
+    transition:0.4s opacity;
+}
+#carousel li.visible{
+	display:inline-block;
+}
+
+#carousel li a img{
+        border:2px #000 solid;
+        border-radius:15px;
+        width:auto;
+        height:auto;
+        max-width:100%;
+        max-height:100%;
+        background-color:#fff;
+}
+
+#carousel li img{  
+    display:block;
+    border:3px #E6B800 solid;
+    border-radius:10px;
+    width:auto;
+    height:auto;
+    max-width:100%;
+    max-height:100%;
+    margin-left:32px;
+    position:relative;
+    z-index:2;
+}
+
+#carousel li a:hover img{
+    border:4px #E6B800 solid;
+    border-radius:10px;
+  right: 20px;
+  top: -29px;
+  transform:rotate(360deg) scale(1.7);
+  transition-duration:500ms;
+  transition-timing-function: ease-out;
+  /* safari / chrome */
+  -webkit-transform:rotate(360deg) scale(1.7); 
+  -webkit-transition-duration:500ms; 
+  -webkit-transition-timing-function: ease-out;
+  /* mozilla */
+  -moz-transform:rotate(360deg) scale(1.7);
+  -moz-transition-duration:500ms;
+  -moz-transition-timing-function: ease-out;
+  /* opera */
+  -o-transform:rotate(360deg) scale(1.7);
+  -o-transition-duration:500ms;
+  -o-transition-timing-function: ease-out;
+  
+  /* ie 9 ou acima*/
+  -ms-transform:rotate(360deg) scale(1.7);
+  -ms-transform-duration:500ms;
+  -ms-transform-timing-function: ease-out;
+  position:relative;
+  z-index:2;
+  box-shadow: rgba(0,0,0,0.4) 0px 0px 10px;
+  -moz-box-shadow: rgba(0,0,0,0.4) 0px 0px 10px;
+  -webkit-box-shadow: rgba(0,0,0,0.4) 0px 0px 10px;   
+}
+/* Creating the cradle below the thumbnails.
+	Uses % so that it grows with the image. */
+	
+#carousel li:after{
+    background-size:contain;
+    bottom: 1%;
+    content: "";
+    left: -6.5%;
+    position: absolute;
+    right: -6.5%;
+    width: auto;
+    z-index: 1;
+}
+
+#carousel li:hover{
+    height: 180px;
+    width: 180px;
+}
+
+.arrow{
+	background:url('../img/steps.png') no-repeat;
+	width:92px;
+	height:50px;
+	opacity:1.2;
+	text-indent:-999px;
+	overflow:hidden;
+	cursor:pointer;
+	display:none;
+	position:absolute;
+	top:410px;
+	left:30%;
+	margin-left:-108px;
+	margin-top:45px;
+}
+
+.arrow:hover{
+	opacity:5;
+}
+
+.arrow.next{
+	margin-left:300px;
+	background-position:top right;
+}
+
+/*----fim da pagina personagem ----*/
+#main-dw{
+    padding-top: 5px;
+    position:relative;
+    margin-bottom: 20px;
+    float:left;
+    padding-bottom: 310px;
+    border:8px #E6B800 solid;
+    border-radius:20px; 
+    width: 700px;
+    text-align: left;
+    background-image:url(../img/dw.png);
+}
+#main-dw h2{
+    line-height: 25px;
+    text-shadow: 2px 2px 1px #000;
+    font-size: 21px;
+    color: #FFF;
+    font-family:BD Cartoon Shout ,SHOWCARD GOTHIC,MV Boli, Geneva;
+    text-align:center;
+    padding-left: 46px;
+    padding-right: 4px;
+    padding-bottom:1.5px;
+}
+
+#carouselll{
+    text-align:center;
+    height:60px;
+    padding: 10px;
+    opacity:3;
+    /* Will animate the transition */
+    -moz-transition:0.3s opacity;
+    -webkit-transition:0.3s opacity;
+    transition:0.3s opacity;
+}
+
+#carouselll.active{
+	opacity:5;
+}
+#carouselll h1{
+    text-shadow: 0px 2px 0px #fff;
+    font-size:30px;
+    font-family:OogieBoogie,SHOWCARD GOTHIC, BD Cartoon Shout, Verdana;
+    line-height: 25px;
+    color: #222;
+    font-weight: bold;
+    margin-left: 5px;
+    width:220px;
+    text-align:center;
+    padding-bottom:1.5px;
+
+}
+#carouselll li{
+    display:none;
+    list-style:none;
+    width:220px;
+    padding: 10px;
+    height:240px;
+    margin: 25px;
+    position:relative;
+    -moz-transition:0.5s opacity;
+    -webkit-transition:0.5s opacity;
+    transition:0.5s opacity;
+}
+#carouselll li.visible{
+	display:inline-block;
+}
+
+#carouselll li a img{
+        border:4px #222 solid;
+        border-radius:15px;
+       width:auto;
+        height:auto;
+        max-width:100%;
+        max-height:100%;;
+        background-color:#fff;
+}
+
+#carouselll li img{  
+    display:block;
+    border:4px #fff solid;
+    border-radius:10px;
+    width:auto;
+    height:auto;
+    max-width:100%;
+    max-height:100%;
+    margin-left:32px;
+    position:relative;
+    z-index:2;
+}
+
+#carouselll li a:hover img{
+    border:4px #222 solid;
+    border-radius:15px;
+  transform:rotate(360deg) scale(1.3);
+  transition-duration:500ms;
+  transition-timing-function: ease-out;
+  /* safari / chrome */
+  -webkit-transform:rotate(360deg) scale(1.3); 
+  -webkit-transition-duration:500ms; 
+  -webkit-transition-timing-function: ease-out;
+  /* mozilla */
+  -moz-transform:rotate(360deg) scale(1.3);
+  -moz-transition-duration:500ms;
+  -moz-transition-timing-function: ease-out;
+  /* opera */
+  -o-transform:rotate(360deg) scale(1.3);
+  -o-transition-duration:500ms;
+  -o-transition-timing-function: ease-out;
+  
+  /* ie 9 ou acima*/
+  -ms-transform:rotate(360deg) scale(1.3);
+  -ms-transform-duration:500ms;
+  -ms-transform-timing-function: ease-out;
+  right: 20px;
+  top: -29px;
+  position:relative;
+  z-index:2;
+  box-shadow: rgba(0,0,0,0.4) 0px 0px 10px;
+  -moz-box-shadow: rgba(0,0,0,0.4) 0px 0px 10px;
+  -webkit-box-shadow: rgba(0,0,0,0.4) 0px 0px 10px;   
+}
+/* Creating the cradle below the thumbnails.
+	Uses % so that it grows with the image. */
+	
+#carouselll li:after{
+    content:'';
+    background-size:contain;
+    bottom: 5%;
+    content: "";
+    height: 10px;
+    left: -6.5%;
+    position: absolute;
+    right: -6.5%;
+    width: auto;
+    z-index: 1;
+}
+
+#carouselll li:hover{
+    height: 240px;
+    width: 220px;
+}
+
+.arrowss{
+	background:url('../img/steps.png') no-repeat;
+	width:92px;
+	height:50px;
+	opacity:1.2;
+	text-indent:-999px;
+	overflow:hidden;
+	cursor:pointer;
+	display:none;
+	position:absolute;
+	top:375px;
+	left:30%;
+	margin-left:-108px;
+	margin-top:49px;
+}
+
+.arrowss:hover{
+	opacity:5;
+}
+
+.arrowss.next{
+	margin-left:300px;
+	background-position:top right;
+}
+/*----------------------------
+	pagina historia
+-----------------------------*/  
+#main-h{
+    border:6px #E6B800 solid;
+    border-radius:25px;
+    width:760px;
+    position:relative;
+    margin-bottom: 20px;
+    float:left;
+    left: 10px;
+    padding-top: 50px;
+    margin: auto;
+    background:url('../img/histor.png') no-repeat top center;
+}
+#main-h img{
+ 
+    border-radius:10px;
+}
+.admin_card {
+    border:8px #E6B800 solid;
+    border-radius:20px; 
+    width: 710px; 
+    background-image:url(../img/persona.png);
+}
+
+.admin_card h1{
+    line-height: 25px;
+    text-align: center;
+    text-shadow: 0px 2px 0px #fff;
+    font-size:32px;
+    font-weight: bold;
+    color: #222;
+    margin-top: 40px;
+    font-family:OogieBoogie, BD Cartoon Shout, Verdana;
+}
+.admin_cards img{
+    border:2px #222 solid;
+    border-radius:10px;
+    width:300px;
+    height:350px;
+    margin-left: 190px;
+}
+#main-c{
+    padding-top: 5px;
+    position:relative;
+    margin-bottom: 20px;
+    padding-bottom: 330px;
+    float:left;
+    border:8px #E6B800 solid;
+    border-radius:20px; 
+    width: 720px;
+    text-align: left;
+    background-image:url(../img/persona.png);
+}
+#main-c h2{
+    line-height: 25px;
+    font-size: 22px;
+    color: #222;
+    font-family:SHOWCARD GOTHIC,MV Boli, Geneva;
+    text-align:center;
+    padding-left: 46px;
+    padding-right: 4px;
+    padding-bottom:1.5px;
+}
+#carousell{
+    text-align:center;
+    height:60px;
+    padding: 10px;
+    opacity:3;
+    /* Will animate the transition */
+    -moz-transition:0.3s opacity;
+    -webkit-transition:0.3s opacity;
+    transition:0.3s opacity;
+}
+
+#carousell.active{
+	opacity:5;
+}
+#carousell h1{
+   text-shadow: 0px 2px 0px #fff;
+    font-size:30px;
+    font-family:OogieBoogie,SHOWCARD GOTHIC, BD Cartoon Shout, Verdana;
+    line-height: 25px;
+    color: #222;
+    font-weight: bold;
+    margin-left: 5px;
+    width:240px;
+    text-align:center;
+    padding-bottom:1.5px;
+}
+#carousell li{
+    display:none;
+    list-style:none;
+    width:220px;
+    padding: 10px;
+    height:250px;
+    margin: 25px ;
+    position:relative;
+    -moz-transition:0.5s opacity;
+    -webkit-transition:0.5s opacity;
+    transition:0.5s opacity;
+}
+#carousell li.visible{
+	display:inline-block;
+}
+
+#carousell li a img{
+        border:2px #000 solid;
+        border-radius:15px;
+       width:auto;
+        height:auto;
+        max-width:90%;
+        max-height:90%;;
+        background-color:#fff;
+}
+
+#carousell li img{  
+    display:block;
+    border:5px #E6B800 solid;
+    border-radius:10px;
+    width:auto;
+    height:auto;
+    max-width:90%;
+    max-height:90%;
+    margin-left:32px;
+    position:relative;
+    z-index:3;
+}
+
+#carousell li a:hover img{
+    border:6px #E6B800 solid;
+    border-radius:10px;
+  transform:rotate(360deg) scale(1.7);
+  transition-duration:500ms;
+  transition-timing-function: ease-out;
+  /* safari / chrome */
+  -webkit-transform:rotate(360deg) scale(1.7); 
+  -webkit-transition-duration:500ms; 
+  -webkit-transition-timing-function: ease-out;
+  /* mozilla */
+  -moz-transform:rotate(360deg) scale(1.7);
+  -moz-transition-duration:500ms;
+  -moz-transition-timing-function: ease-out;
+  /* opera */
+  -o-transform:rotate(360deg) scale(1.7);
+  -o-transition-duration:500ms;
+  -o-transition-timing-function: ease-out;
+  
+  /* ie 9 ou acima*/
+  -ms-transform:rotate(360deg) scale(1.7);
+  -ms-transform-duration:500ms;
+  -ms-transform-timing-function: ease-out;
+  right: 20px;
+  top: -29px;
+  position:relative;
+  z-index:59;
+  box-shadow: rgba(0,0,0,0.4) 0px 0px 10px;
+  -moz-box-shadow: rgba(0,0,0,0.4) 0px 0px 10px;
+  -webkit-box-shadow: rgba(0,0,0,0.4) 0px 0px 10px;   
+}
+/* Creating the cradle below the thumbnails.
+	Uses % so that it grows with the image. */
+	
+#carousell li:after{
+    content:'';
+    background-size:contain;
+    bottom: 2%;
+    content: "";
+    top: 9px;
+    height: 10px;
+    left: -6.5%;
+    position: absolute;
+    right: -6.5%;
+    width: auto;
+    z-index: 1;
+}
+
+#carousell li:hover{
+    height: 197px;
+    margin-top: 70px;
+    width: 225px;
+}
+
+.arrows{
+	background:url('../img/steps.png') no-repeat;
+	width:92px;
+	height:50px;
+	opacity:1.2;
+	text-indent:-999px;
+	overflow:hidden;
+	cursor:pointer;
+	display:none;
+	position:absolute;
+	top:370px;
+	left:30%;
+	margin-left:-108px;
+	margin-top:45px;
+}
+
+.arrows:hover{
+	opacity:5;
+}
+
+.arrows.next{
+	margin-left:300px;
+	background-position:top right;
+}
+.hist-ver{
+    width:370px;
+    position:relative;
+    float:right;
+    background-image:url(../img/ver.png);
+    left:-34px;
+    padding-top: 14px;
+    height:340px;
+    overflow:auto;
+    border-radius:10px;
+    
+}
+.hist-ver h4{
+    line-height: 28px;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 10px;
+    color: #000;
+    text-shadow: 0px 2px 0px #fff;
+    font-family:MV Boli, Geneva;
+    text-align:center;
+    padding-left: 46px;
+    padding-right: 4px;
+    padding-bottom:1.5px;
+}
+.histo{
+    background-image:url(../img/histo.png);
+    height:40px;
+    width:804px;
+    padding: 6px;
+    padding-left: 140px;
+}
+#input{
+    font-family:MV Boli, Geneva;
+    font-size: 14px;
+    width: 160px;
+    height: 25px;
+    color:#fff;
+    background: #a00;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    }
+.histo p{
+    font-size: 16px;
+    font-weight: bold;
+    top: -32px;
+    text-align:left;
+    color: #a00;
+    font-family:MV Boli, Geneva;
+}
+.span{
+    font-size: 13px;
+    font-weight: bold;
+    color: #222;
+    padding-left: 340px;
+    font-family:MV Boli, Geneva;
+}
+/*----fim da pagina historia ----*/
+
+/*----class e html do site----*/
+.parada{
+    border:6px #E6B800 solid;
+    border-radius:25px;
+    width:740px;
+    position:relative;
+    padding-bottom: 430px;
+    float:left;
+    padding-top: 50px;
+    margin: auto;
+    background:url('../img/parada.png');
+}
+.parada img{
+    border:1px transparent solid;
+    border-radius:10px;
+    width:180px;
+    height:250px;
+    margin-top: 50px;
+}
+.novida{
+    border:6px #E6B800 solid;
+    border-radius:25px;
+    width:760px;
+    position:relative;
+    padding-bottom: 50px;
+    float:left;
+    padding-top: 50px;
+    margin: auto;
+    background:url('../img/novida.png');
+}
+.novida img{
+    border:1px transparent solid;
+    border-radius:10px;
+    width:180px;
+    height:250px;
+    margin-top: 50px;
+}
+.novid-ver{
+    width:472px;
+    position:relative;
+    float:right;
+    background-image:url(../img/ler.png);
+    left:-34px;
+    padding-top: 25px;
+    height:320px;
+    overflow:auto;
+    
+}
+.novid-ver h4{
+    line-height: 28px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align:left;
+    padding-top: 10px;
+    color: #222;
+    text-shadow: 0px 2px 0px #fff;
+    font-family:MV Boli, Geneva;
+    text-align:center;
+    padding-left: 46px;
+    padding-right: 4px;
+    padding-bottom:1.5px;
+}
+.conseho{
+    border:6px #E6B800 solid;
+    border-radius:25px;
+    width:743px;
+    position:relative;
+    padding-bottom:63px;
+    float:left;
+    left: 10px;
+    padding-top: 50px;
+    background:url('../img/conselho.png');
+}
+
+.conseho img{
+    border:2px #222 solid;
+    border-radius:10px;
+    width:150px;
+    height:170px;
+    margin-top: 232px;
+}
+.con-ver{
+    width:472px;
+    position:relative;
+    float:right;
+    top: 120px;
+    background-image:url(../img/lerr.png);
+    left:-34px;
+    padding-top: 25px;
+    height:298px;
+    overflow:auto;
+}
+.con-ver h4{
+    line-height: 28px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align:left;
+    padding-top: 10px;
+    color: #222;
+    text-shadow: 0px 2px 0px #fff;
+    font-family:MV Boli, Geneva;
+    text-align:center;
+    padding-left: 34px;
+    padding-right: 6px;
+    padding-bottom:1.5px;
+}
+.novidade{
+    border-radius:25px;
+    width:720px;
+    position:relative;
+    float:left;
+    padding:6px;
+    background-image:url(../img/outra.png);
+    margin-bottom: 10px;
+}
+.novidade img {
+    border: 1px transparent solid;
+    float: left;
+    margin: 10px10px 0 0;
+    padding: 2px;
+}
+.novidade p{
+    color:#222;
+    font-size:20px;
+    line-height: 55px;
+    text-align:center;
+    margin: 0.5em 0;
+    padding: 3px;
+    padding-left: 40px;
+    padding-right: 30px;
+    padding-bottom:1.5px;
+}
+
+h1 a {
+    color: #222;
+    padding: 5px;
+    text-decoration:none;
+}
+h1 a:hover {
+    color: #000;
+}
+
+h2{
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    color: #222;
+    text-shadow: 0px 2px 0px #fff;
+    line-height: 30px;
+    font-family:MV Boli, Geneva;
+}
+.h4{
+    font-size: 17px;
+    font-weight: bold;
+    text-align:left;
+    line-height: 35px;
+    margin-left: 25px;
+    padding-left: 22px;
+    color: #a00;
+    font-family:MV Boli, Geneva;
+}
+
+h4{
+    font-size: 17px;
+    font-weight: bold;
+    text-align:left;
+    line-height: 25px;
+    margin-left: 25px;
+    padding-left: 22px;
+    color: #a00;
+    font-family:MV Boli, Geneva;
+}
+
+.h5{
+    font-size: 15px;
+    font-weight: bold;
+    text-align:left;
+    line-height: 25px;
+    margin-right: 10px;
+    margin-left: 10px;
+    color: #222;
+    font-family:MV Boli, Geneva;
+}
+h5{
+    font-size: 14px;
+    font-weight: bold;
+    text-align:left;
+    margin-left: 20px;
+    padding-left: 22px;
+    color: #222;
+    text-decoration:underline;
+    font-family:MV Boli, Geneva;
+}
+.h3{
+    font-size: 19px;
+    font-weight: bold;
+    text-align: left;
+    padding: 2px;
+    color: #222;
+    font-family:MV Boli, Geneva;
+}
+h3{
+    font-size: 19px;
+    font-weight: bold;
+    text-align: left;
+    padding: 6px;
+    line-height: 35px;
+    color: #222;
+    font-family:MV Boli, Geneva;
+}
+h1{
+    text-align: center;
+    text-shadow: 0px 2px 0px #E6B800;
+    color: #222;
+    font-size:32px;
+    line-height: 33px; 
+    font-family:OogieBoogie, BD Cartoon Shout, Verdana; 
+}
+.imagem{
+    border:1px #222 solid;
+    border-radius:10px;
+    background-color: #fff;
+    margin: 0 auto;
+    float: left;
+    padding: 5px;
+    margin-left: 60px;
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+.imagen{
+    border:none;
+    margin: 0 auto; 
+    border: 1pxsolid #7E9F19;
+    float: left;
+}
+.imagen img{
+  border: 1px transparent solid;
+    float: left;
+    margin: 0 0 10px10px ;
+    padding: 2px;
+    width:620px;
+}
+#img{
+    border:none;
+    margin: 0 auto; 
+    border: 1pxsolid #7E9F19;
+    float: right;
+    margin-left: 10px;
+    padding: 2px;
+}
+.img{
+    border:none;
+    margin: 0 auto; 
+    border: 1pxsolid #7E9F19;
+    float: left;
+    margin-left: 20px;
+    padding: 2px;
+}
+.paginacao{
+    font-size: 14px;
+    text-align:center;
+    padding-left: 46px;
+    padding-right: 4px;
+    padding-bottom:1.5px;
+    font-weight: bold;
+    color: #a00;
+    font-family:MV Boli, Geneva;
+}
+
+.contefor{
+    border-radius:25px;
+    width:740px;
+    position:relative;
+    float:left;
+    margin: auto;
+    background-color: Transparent;
+    margin-bottom: 10px;
+}
+
+label {
+    font-family: Arial, Verdana;
+    font-size: 13px;
+    color: #a00;
+    width: 300px;
+    background: transparent;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    display:block;
+    padding: 5px;
+    margin-top:10px;
+}
+.input-text{
+    font-family: Arial, Verdana;
+    font-size: 13px;
+    width: 150px;
+    margin-left: -12px;
+    color:#a00;
+    background:transparent;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    }
+    .button{
+    font-family:MV Boli, Geneva;
+    font-size: 13px;
+    width: 150px;
+    height: 20px;
+    margin-left: 40px;
+    color:#fff;
+    background: #a00;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    }
+input{
+    font-family:MV Boli, Geneva;
+    font-size: 13px;
+    width: 150px;
+    height: 25px;
+    color:#fff;
+    background: #a00;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    border: transparent;
+    }
+
+input:-moz-placeholder { font-family:MV Boli, Geneva;  font-weight: bold; font-size: 12px; color: #000; }
+input:-ms-input-placeholder { font-family:MV Boli, Geneva;  font-weight: bold; font-size: 12px; color: #000;  }
+input::-webkit-input-placeholder { font-family:MV Boli, Geneva;  font-weight: bold; font-size: 12px; color: #000; }
+
+input:focus, textarea:focus {
+    -moz-box-shadow:
+        0 2px 2px 0 rgba(0,0,0,.1) inset,
+        0 2px 4px 0 rgba(0,0,0,.2);
+    -webkit-box-shadow:
+        0 2px 2px 0 rgba(0,0,0,.1) inset,
+        0 2px 4px 0 rgba(0,0,0,.2);
+    box-shadow:
+        0 2px 2px 0 rgba(0,0,0,.1) inset,
+        0 2px 4px 0 rgba(0,0,0,.2);
+}
+    textarea {
+	width: 187px; height: 70px; padding: 12px 20px 0px 20px; margin: 0 0 20px 0; 
+	background:transparent;
+	background: -moz-linear-gradient(top, #F0F0F0 0%, #fa0 10%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,f0f0f0), color-stop(10%,#fa0)); /* webkit */
+	border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+	-moz-box-shadow: 0px 1px 0px #fa0;-webkit-box-shadow: 0px 1px 0px #F0F0F0;
+	font-family: sans-serif; font-size: 16px; color: #000; text-transform: uppercase; text-shadow: 0px -1px 0px #f0f0f0; 
+    }
+    textarea::-webkit-input-placeholder  {
+    color: #000; text-shadow: 0px -1px 0px #a00;  
+    }
+    textarea:-moz-placeholder {
+        color: #000; text-shadow: 0px -1px 0px #a00; 
+    }
+  
+:required {
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 255, .5);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 255, .5);
+  -o-box-shadow: 0 0 5px rgba(0, 0, 255, .5);
+  -ms-box-shadow: 0 0 5px rgba(0, 0, 255, .5);
+  box-shadow: 0 0 5px rgba(0, 0, 255, .5);
+}
+    
+   .hint{
+    display:none;
+    }
+    .field input{
+    font-family: Arial, Verdana;
+    font-size: 15px;
+    padding: 5px;
+    margin-left: 10px;
+    width: 200px;
+    color: maroon;
+    background: transparent;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px; 
+    border: transparent;
+    }
+  .field:hover .hint {
+    position: absolute;
+    display: block;
+    width:200px;
+    margin: -6px 0 0 125px;
+    color: #FFFFFF;
+    padding: 7px 10px;
+    background: #a00;
+    text-align: center;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    border: transparent;
+    }
+    fieldset  h1{
+        margin-left: -190px;
+    }
+    .admin_contentform {
+    width: 735px;
+    text-align: left;
+    top: -75px;
+    padding-top: 70px;
+    background: transparent;
+    border-radius:25px;
+    border: transparent;
+    padding-bottom: 88px;
+}
+ .admin_contentformu {
+    width: 735px;
+    text-align: left;
+    top: -75px;
+    padding-top: 10px;
+    background: url(../img/for.png);
+    border-radius:25px;
+    border: transparent;
+    padding-bottom: 88px;
+}
+.conteformu{
+    border-radius:25px;
+    border: transparent;
+    width:710px;
+    position:relative;
+    float:left;
+    margin: auto;
+    height: 660px;
+    background: url(../img/formulario.png);
+    margin-bottom: 10px;
+    padding-bottom: 28px;
+}
+ .fieldset  {
+    position: relative;
+    display: block;
+    background-image:url(../img/for.png);
+    width: 410px;
+    border-radius:25px;
+    border: transparent;
+    margin: auto;
+    padding-left: 180px;
+    top: 2px;
+    margin-bottom: 30px;
+    } 
+fieldset  {
+    top: 2px;
+    text-shadow: 1px 0px 1px #333;
+    
+    text-align: left;
+    font-size:14px;
+    font-variant:inherit;
+    font-family:MV Boli, Geneva;
+    line-height: 10px;
+    display: block;
+    background-image:url(../img/noise.png);
+    width: 410px;
+    border-radius:25px;
+    border: transparent;
+    position: relative;
+    padding-left: 180px;
+    margin: auto;
+    margin-bottom: 30px;
+    }
+  .table {
+    margin-left: 90px;
+    position: relative;
+    text-align: left;
+    width: 640px;
+    margin-top: 35px;
+    font-weight: bold;
+    font-size:12px;
+    line-height: 17px;
+    color: #000;
+    background-color: Transparent;
+    }
+    table {
+    margin: auto;
+    position: relative;
+    text-align: left;
+    width: 640px;
+    font-size:12px;
+    line-height: 17px;
+    color: #000;
+    background-color: Transparent;
+    }
+    td{
+    position: relative;
+    text-align: left;
+    font-size:12px;
+    color: #333;  
+    width: 100px;
+    }
+    tr{
+    position: relative;
+    text-align: left;
+    font-size:12px;
+    font-family: inherit;
+    line-height: 17px;
+    color: #333;  
+    width: 100px;
+    }
+    th {
+    padding: 4px;
+    background-color: #E6B800;
+    text-shadow: 0px 1px 0px #E6B800;
+    position: relative;
+    text-align: left;
+    font-weight: bold;
+    font-size:14px;
+    border: 1px solid #333;
+    line-height: 22px;
+    color: #000;
+    }
+  
+
+/**
+ *
+ * Sky jQuery Touch Carousel
+ * URL: http://www.skyplugins.com
+ * Version: 1.0.2
+ * Author: Sky Plugins
+ * Author URL: http://www.skyplugins.com
+ *
+ */
+
+/**********************************************
+*
+* 1. Media Queries
+*
+**********************************************/
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+	html {
+		margin-left: 1px;
+	}
+}
+
+@media only screen and (min-width: 10px) and (max-width: 10px) {
+	.sky-carousel .sc-overlay {
+		width: 10px !important;
+	}
+}
+
+@media only screen and (max-width: 9px) {
+	.sky-carousel .sc-overlay {
+		width: 10px !important;
+	}
+}
+
+/**********************************************
+*
+* 2. Container Styles
+*
+**********************************************/
+.js .sky-carousel {
+	visibility: hidden;
+}
+
+.sky-carousel {
+	width: 100%;
+	height: 450px;
+	position: relative;	
+	background:transparent;
+	overflow: hidden;
+	margin: 0 auto;	
+}
+
+.sky-carousel .sky-carousel-container {
+	position: relative;
+	list-style-type: none;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+/**********************************************
+*
+* 3. Carousel Item Styles
+*
+**********************************************/
+.sky-carousel .sky-carousel-container li {
+	position: absolute;
+	border: 0;
+}
+
+.sky-carousel .sky-carousel-container li img {
+	display: block;
+	border: 0;
+	max-width: none !important;
+}
+
+.sky-carousel .sky-carousel-container li a img {
+	border: none;
+}
+
+.sky-carousel .sky-carousel-container .sc-content {
+	display: none;
+}
+
+/**********************************************
+*
+* 4. Current Content Styles
+*
+**********************************************/
+.sky-carousel .sc-content-wrapper {
+	position: absolute;
+	text-align: center;	
+	width: 100%;
+	top: 81%;
+	left: 50%;
+	z-index: 4999;
+}
+.sky-carousel .sc-content-container {
+	position: relative;
+        width: 260px;
+	left: -15%;
+        top: -15px;
+	padding: 0 20px;
+        background-color: #a00;
+        border-radius: 10px;
+        border: 3px #000 solid;
+}
+.sky-carousel .sc-content-wrapper h2 {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 1px 2px 1px #000;
+    color: #fff;
+    line-height: 25px;
+    font-family:MV Boli, Geneva;
+	margin: 0;
+	padding: 0;
+}
+
+.sky-carousel .sc-content-wrapper p {
+	color: #777;
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+}
+
+.sky-carousel .sc-content-wrapper a {
+	text-decoration: none;
+	color: #444;
+	border-bottom: 1px dotted #444;
+}
+
+/**********************************************
+*
+* 5. Gradient Overlay Styles
+*
+**********************************************/
+.sky-carousel .sc-overlay {
+	position: absolute;
+	pointer-events: none;
+	top: 0;
+}
+
+.sky-carousel .sc-overlay-left {
+	left: -0.1px;
+}
+
+.sky-carousel .sc-overlay-right {
+	right: -0.1px;
+}
+
+/**********************************************
+*
+* 6. Navigation Styles
+*
+**********************************************/
+.sky-carousel .sc-nav-button {
+	position: absolute;
+	top: 380px;
+	width: 88px;
+	height: 36px;
+        left: 38%;
+        margin-left: 39%;
+        background:url('../img/steps.png') no-repeat;
+	transition: background-color 0.3s;
+	-moz-transition: background-color 0.3s;
+	-webkit-transition: background-color 0.3s;
+	-o-transition: background-color 0.3s;
+}
+
+.sky-carousel .sc-nav-button.sc-next {
+	background: Transparent url("../img/stepsdt.png") no-repeat 16px 50%;
+	right: -0.1px;
+}
+
+.sky-carousel .sc-nav-button.sc-prev {
+	background: Transparent url("../img/stepseq.png") no-repeat 14px 50%;
+	left: -0.1px;
+        margin-left: 145px;
+}
+
+.no-touch .sky-carousel .sc-nav-button:hover {
+    
+        border-radius: 10px;
+}
+/**********************************************
+*
+* 7. Preloader Styles
+*
+**********************************************/
+.sky-carousel .sc-preloader {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 24px;
+	height: 24px;
+	margin-top: -22px;
+	margin-left: -22px;
+	background: #f5f5f5 url("../img/preloader.gif") no-repeat 50% 50%;
+	padding: 10px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+/**********************************************
+*
+* 8. Other Styles
+*
+**********************************************/
+.sc-no-select {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+/*
+ * jQuery Nivo Slider v3.2
+ * http://nivo.dev7studios.com
+ *
+ * Copyright 2012, Dev7studios
+ * Free to use and abuse under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+ 
+/* The Nivo Slider styles */
+.nivoSlider {
+	position:relative;
+        border:2px #E8E8E8 solid;
+        border-radius:15px;
+        background:transparent; 
+        width: 700px;
+	/*width:100%;*/
+	height:auto;
+	overflow: hidden;
+}
+.nivoSlider img {
+	position:absolute;
+        border-radius:10px;
+        background:transparent; 
+	top:0px;
+	left:0px;
+	max-width: none;
+}
+.nivo-main-image {
+	display: block !important;
+	position: relative !important; 
+	width: 100% !important;
+        background:transparent; 
+}
+
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	border:0;
+	padding:0;
+	margin:0;
+	z-index:6;
+	display:none;
+	background:transparent;  
+	filter:alpha(opacity=0); 
+	opacity:0;
+}
+/* The slices and boxes in the Slider */
+.nivo-slice {
+	display:block;
+        background:transparent; 
+	position:absolute;
+	z-index:5;
+	height:100%;
+	top:0;
+}
+.nivo-box {
+	display:block;
+	position:absolute;
+	z-index:5;
+	overflow:hidden;
+        background:transparent; 
+}
+.nivo-box img { display:block; }
+
+/* Caption styles */
+.nivo-caption {
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	background:transparent; 
+	color:#fff;
+	width:100%;
+	z-index:8;
+	padding: 5px 10px;
+	opacity: 0.8;
+	overflow: hidden;
+	display: none;
+	-moz-opacity: 0.8;
+	filter:alpha(opacity=8);
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.nivo-caption p {
+	padding:5px;
+	margin:0;
+}
+.nivo-caption a {
+	display:inline !important;
+}
+.nivo-html-caption {
+    display:none;
+    background:transparent;
+}
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav a {
+	position:absolute;
+	top:45%;
+	z-index:9;
+	cursor:pointer;
+        background:transparent;
+}
+.nivo-prevNav {
+	left:0px;
+}
+.nivo-nextNav {
+	right:0px;
+}
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav {
+	text-align:center;
+	padding: 15px 0;
+}
+.nivo-controlNav a {
+	cursor:pointer;
+}
+.nivo-controlNav a.active {
+	font-weight:bold;
+}
